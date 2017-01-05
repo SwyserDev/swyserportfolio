@@ -1,0 +1,23 @@
+{
+  "name": "swyserportfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Francois van der Merwe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwyserDev/swyserportfolio.git"
+  },
+  "author": "Francois van der Merwe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SwyserDev/swyserportfolio/issues"
+  },
+  "homepage": "https://github.com/SwyserDev/swyserportfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7"
+  }
+}
