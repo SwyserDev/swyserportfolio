@@ -4,9 +4,10 @@ var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var clean = require('gulp-clean');
 var htmlmin = require('gulp-htmlmin');
+var webserver = require('gulp-webserver');
 
 gulp.task('clean', function() {
-  gulp.src('dist/**/*', {read: false})
+  gulp.src('dist/')
     .pipe(clean());
 });
 
@@ -58,4 +59,27 @@ gulp.task('root', function() {
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('build', ['minify-css', 'fontAwesome', 'fonts', 'images', 'js', 'less', 'mail', 'html', 'root']);
+gulp.task('serve', function () {
+  gulp.src('dist/')
+    .pipe(webserver({
+      fallback: 'index.html',
+      open: true,
+      directoryListing: {
+        enable: true,
+        path: 'public'
+      },
+      livereload: false
+    }));
+});
+
+gulp.task('default', ['minify-css', 'fontAwesome', 'fonts', 'images', 'js', 'less', 'mail', 'html', 'root']);
+
+gulp.task('generate-service-worker', function(callback) {
+  var path = require('path');
+  var swPrecache = require('sw-precache');
+
+  swPrecache.write('dist/service-worker.js', {
+    staticFileGlobs: ['dist/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff}'],
+    stripPrefix: 'dist/'
+  }, callback);
+});

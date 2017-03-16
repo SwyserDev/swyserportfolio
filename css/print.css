@@ -1,0 +1,25 @@
+@media print {
+    .break-page-print {
+        page-break-after: always;
+    }
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+
+    a[href]:after {
+        content: none !important;
+    }
+
+    .print-center {
+        text-align: center;
+    }
+
+    [class*="col-md"], [class*="col-sm"], [class*="col-xs"] {
+        float: none;
+    }
+
+    .container {
+        width:100%;
+    }
+}

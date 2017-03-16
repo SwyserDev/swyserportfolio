@@ -15,7 +15,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/agency.css">
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -29,12 +30,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-</head> 
+</head>
 
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top no-print">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -79,7 +80,7 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="no-print">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome To My Portfolio!</div>
@@ -90,7 +91,7 @@
     </header>
 
     <!-- Introduction Section -->
-    <section id="introduction" class="bg-light-gray">
+    <section id="introduction" class="bg-light-gray break-page-print">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -109,26 +110,28 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Front-end developer by day and full stack developer by night! I am a web coding junkie and currently focusing on creating web and mobile hybrid applications by using the latest technologies so that I can deliver a final product that's got byte to it's bark.</p>
+                    <p class="large text-muted">Web developer by day and full stack developer by night! I am a web coding junkie and currently focusing
+                        on creating web and progressive web applications by using the latest technologies so that I can deliver
+                        a final product that's got byte to it's bark.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- More About Me Section -->
-    <section id="timeline">
+    <section id="timeline" class="break-page-print">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">My Timeline</h2>
-                    <h3 class="section-subheading text-muted">What have I been up to until now?</h3>
+                    <h3 class="section-subheading text-muted no-print">What have I been up to until now?</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
                         <li>
-                            <div class="timeline-image">
+                            <div class="timeline-image no-print">
                                 <img class="img-circle img-responsive" src="img/about/study.png" alt="">
                             </div>
                             <div class="timeline-panel">
@@ -137,12 +140,15 @@
                                     <h4 class="subheading">Varsity College</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Although a very basic introduction to the developer life, it confirmed my suspicions that to become a developer would be fun and challenging! At the same time, I gained the required knowledge to further strengthen my developing skills.</p>
+                                    <p class="text-muted">Although a very basic introduction to the developer world, it confirmed my suspicions
+                                        that to become a developer would be fun and challenging! At the same time I gained
+                                        the required knowledge to establish a good foundation on which I was able to further
+                                        strengthen my software development skills.</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
+                            <div class="timeline-image no-print">
                                 <img class="img-circle img-responsive" src="img/about/work.png" alt="">
                             </div>
                             <div class="timeline-panel">
@@ -151,12 +157,16 @@
                                     <h4 class="subheading">Clabo Beleggings</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Being the IT and technical support at Clabo presented its share of challenges, broad challenges. From Dovecot mail servers, VPN maintenance, networking installations and even technical support. Only one thing was missing, me sitting in front of a computer and doing actual coding, so I moved on, in search of more coding!</p>
+                                    <p class="text-muted">Being in the postition of overseeing IT and technical support at Clabo presented its
+                                        share of challenges, broad challenges. From Dovecot mail servers, VPN setup and maintenance,
+                                        networking installations and even technical support. The only thing that I was missing,
+                                        me sitting in front of a computer and doing actual coding, so I moved on, in search
+                                        of more coding challenges!</p>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="timeline-image">
+                            <div class="timeline-image no-print">
                                 <img class="img-circle img-responsive" src="img/about/study.png" alt="">
                             </div>
                             <div class="timeline-panel">
@@ -165,12 +175,17 @@
                                     <h4 class="subheading">Van Zyl & Pritchard</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Studying at VZap was quite an experience. It was an intensive course, running from 8am to 5pm everyday and slapped all of us with a steep learning curve. Hard work payed off and so during that time I walked away with a fair grasp of Object Orientated Programming. It was intriguing to experience open source technologies firsthand. So time passed quickly and now deemed myself ready to become a developer!</p>
+                                    <p class="text-muted">Studying at VZap was quite an experience. It was an intensive course running from 8am
+                                        to 5pm everyday and slapped all of us with a steep learning curve. Not being afraid
+                                        of hard work payed off and so during that time I walked away with a SOLID grasp of
+                                        Object Orientated Programming. It was intriguing to experience open source technologies
+                                        firsthand. So time passed quickly and now deemed myself ready to become a proper
+                                        software developer!</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
+                            <div class="timeline-image no-print">
                                 <img class="img-circle img-responsive" src="img/about/work.png" alt="">
                             </div>
                             <div class="timeline-panel">
@@ -179,12 +194,17 @@
                                     <h4 class="subheading">Cbars</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Fresh out of college (again) and ready to become a developer, I started work at Cbars, getting my hands on proper web development for the first time. Here I changed back again from open source to Microsoft, but soon found myself regretting the decision. Due to my background in ASP classic, I was tasked with optimizing pages upon pages of code written by another gentleman. All the new and fresh web developing technologies were flying past me while stuck with ASP classic.</p>
+                                    <p class="text-muted">Fresh out of college (again) and ready to become a developer, I started work at Cbars,
+                                        getting my hands on actual web development for the first time. At Cbars I changed
+                                        back again from open source to Microsoft, but soon found myself regretting the decision.
+                                        Due to my background in ASP classic, I was tasked with optimizing pages upon pages
+                                        of code written by another gentleman. All the new and fresh web developing technologies
+                                        were flying past me while stuck with ASP classic.</p>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="timeline-image">
+                            <div class="timeline-image no-print">
                                 <img class="img-circle img-responsive" src="img/about/work.png" alt="">
                             </div>
                             <div class="timeline-panel">
@@ -193,12 +213,22 @@
                                     <h4 class="subheading">Manstrat AIS</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">So Manstrat was my chance to show what I am capable of. At the beginning I was spending most of my time developing in VB.Net, ASP.Net and quickly progressed to using ajax. Next came c#, jquery, handlebars. Bringing with them plenty of happy developing hours. A few years flew past and when I looked back, I noticed that I was trending more and more towards letting JavaScript based technologies do the work for me. Not forgetting that I was still actively and fiercely busy developing the same on the backend. Constantly improving the technologies. For our latest project we decided to employ AngularJs, ASP.Net Web API's, Entity Framework 6 and MS SQL 2014 and I must say, what a lovely stack!</p>
+                                    <p class="text-muted">So Manstrat was my chance to show what I am capable of. At the beginning I was spending
+                                        most of my time developing in VB.Net, ASP.Net and quickly progressed to using ajax.
+                                        Next came c#, jquery, handlebars seeing that the powers of Microsft and opensource
+                                        JavaScript libraries can indeed compliment each other, bringing with them plenty
+                                        of happy developing hours. A few years flew past and when I looked back, I noticed
+                                        that I was trending more and more towards letting JavaScript based technologies do
+                                        the work for me. Not forgetting that I was still actively and fiercely busy developing
+                                        the same on the backend using WebApi's. I found myself constantly improving the technology
+                                        stack the we used. For our latest project we decided to employ AngularJs, ASP.Net
+                                        Web API's, Entity Framework 6 and MS SQL 2014 and I must say, what a lovely stack
+                                        it was! It was then that I found out that DevOps is a very crutial part of any project!</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
+                            <div class="timeline-image no-print">
                                 <img class="img-circle img-responsive" src="img/about/work.png" alt="">
                             </div>
                             <div class="timeline-panel">
@@ -207,15 +237,22 @@
                                     <h4 class="subheading">Britehouse (Standard Bank SBG)</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">I started at Britehouse in search for better opportunities and possibly the chance of moving up and reaching my dream of becoming a software architect. At the moment I am being outsourced to Stadard Bank as a front-end developer. Here I am able to dev web applications using Angular 2 (typescript) with Material Design Lite to create some rich and interactive user interfaces. Ever heard of NgRx? Or maybe Redux or flux? Yup, we are using it...quite cool. Getting use to the Agile environment and enjoying the free coffee!</p>
+                                    <p class="text-muted">I started at Britehouse in search for better opportunities and possibly the chance of
+                                        moving up and reaching my dream of becoming a software architect. At the moment,
+                                        I am being outsourced to Standard Bank as a front-end developer. Here I am able to
+                                        dev web applications using Angular 2 (typescript) with Material Design Lite to create
+                                        some rich and interactive user interfaces. Ever heard of RxJS? Yup, we are using
+                                        it...quite cool. I now can't imagine a project without using the Agile principles
+                                        to manage it all. I retrospect I have grown more in the last year than I have grown
+                                        at any other company. Being exposed to other developers opinions, having a passionate
+                                        mentor and being able confirm my after-hours studies the colleagues is truly valuable!</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
+                            <div class="timeline-image no-print">
                                 <h4>
-                                    Next?<br />
-                                    Who Knows?
+                                    Next?<br /> Who Knows?
                                 </h4>
                             </div>
                         </li>
@@ -226,12 +263,13 @@
     </section>
 
     <!-- Projects Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
+    <section id="portfolio" class="bg-light-gray break-page-print">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">My Projects</h2>
-                    <h3 class="section-subheading text-muted">If you would like to know about the projects that I have been involved with,<br /> please follow the tile below to my development site <a href="http://swyserdev.co.za" target="_blank">swyserdev.co.za</a></h3>
+                    <h3 class="section-subheading text-muted">If you would like to know about the projects that I have been involved with,<br /> please follow the
+                        tile below to my development site <a href="http://swyserdev.co.za" target="_blank">swyserdev.co.za</a></h3>
                 </div>
             </div>
             <div class="row">
@@ -248,24 +286,32 @@
     </section>
 
     <!-- Technologies Section -->
-    <section id="technologies">
+    <section id="technologies" class="break-page-print">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Technologies</h2>
-                    <h3 class="section-subheading text-muted">Being a developer that can produce a fully functioning web application requires skills from right across the board...<br />Here are some of the technologies I have been exposed to:</h3>
+                    <h3 class="section-subheading text-muted">Being a developer that can produce a fully functioning web application requires skills from right across
+                        the board...<br />Here are some of the technologies I have been exposed to:</h3>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
+            <div class="row text-center" style="margin-bottom: 50px;">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x no-print">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-navicon fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Design</h4>
-                    <p class="text-muted">Style guides to the rescue! In my development experience I have grown accustomed to using already created styled templates to ease the headache of desinging a website from scratch.</p>
+                    <p class="text-muted">Style guides to the rescue! In my development experience I have grown accustomed to using already created
+                        styled templates to ease the headache of desinging a website from scratch. Although a good understanding
+                        of how html and css works is crutial to make such a design work.</p>
                     <hr />
                     <div class="row">
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://material.io/" target="_blank" style="color:#798d8f;">
+                                material design
+                            </a>
+                        </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
                             <a href="http://www.w3.org/TR/html5/" target="_blank" style="color:#798d8f;">
                                 html5
@@ -302,44 +348,68 @@
                             </a>
                         </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
-                            <a href="https://www.google.co.za/search?num=20&espv=2&q=bootstrap+templates&spell=1&sa=X&ved=0ahUKEwj4nOz4k6rJAhUCvxQKHWzoA7oQvwUIGSgA&biw=1920&bih=945" target="_blank" style="color:#798d8f;">
+                            <a href="https://www.google.co.za/search?num=20&espv=2&q=bootstrap+templates&spell=1&sa=X&ved=0ahUKEwj4nOz4k6rJAhUCvxQKHWzoA7oQvwUIGSgA&biw=1920&bih=945"
+                                target="_blank" style="color:#798d8f;">
                                 templates
                             </a>
                         </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
-                            <a href="https://www.google.co.za/search?num=20&espv=2&biw=1920&bih=945&q=angular+bootstrap+templates&oq=angular+btemplates&gs_l=serp.3.0.0i7i30j0i8i7i30j0i8i7i10i30j0i8i7i30l2.40723.43108.0.46932.11.10.1.0.0.0.574.2226.2-1j1j1j2.5.0....0...1c.1.64.serp..8.3.1154.OHYOH9T8r2g" target="_blank" style="color:#798d8f;">
+                            <a href="https://www.google.co.za/search?num=20&espv=2&biw=1920&bih=945&q=angular+bootstrap+templates&oq=angular+btemplates&gs_l=serp.3.0.0i7i30j0i8i7i30j0i8i7i10i30j0i8i7i30l2.40723.43108.0.46932.11.10.1.0.0.0.574.2226.2-1j1j1j2.5.0....0...1c.1.64.serp..8.3.1154.OHYOH9T8r2g"
+                                target="_blank" style="color:#798d8f;">
                                 angular templates
                             </a>
                         </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
-                            <a href="https://www.google.co.za/search?num=20&espv=2&biw=1920&bih=945&q=mobile+html+templates&oq=mobile+html+templates&gs_l=serp.12...0.0.0.37721.0.0.0.0.0.0.0.0..0.0....0...1c..64.serp..0.0.0.1zgyxlx9yHk" target="_blank" style="color:#798d8f;">
+                            <a href="https://www.google.co.za/search?num=20&espv=2&biw=1920&bih=945&q=mobile+html+templates&oq=mobile+html+templates&gs_l=serp.12...0.0.0.37721.0.0.0.0.0.0.0.0..0.0....0...1c..64.serp..0.0.0.1zgyxlx9yHk"
+                                target="_blank" style="color:#798d8f;">
                                 mobile templates
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x no-print">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-code fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Scripts</h4>
-                    <p class="text-muted">I enjoy working with any JavaScript based code. Implementing new and exciting libraries. The power lies with JavaScript, becoming more powerful everyday!</p>
+                    <p class="text-muted">I enjoy working with any JavaScript based code. Implementing new and exciting libraries. The power lies
+                        with JavaScript, becoming more powerful everyday!</p>
                     <hr />
                     <div class="row">
-                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
-                            <a href="https://angularjs.org/" target="_blank" style="color:#798d8f;">
-                                angularjs
-                            </a>
-                        </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
                             <a href="https://angular.io/" target="_blank" style="color:#798d8f;">
                                 angular 2 (typescript)
                             </a>
                         </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://angularjs.org/" target="_blank" style="color:#798d8f;">
+                                angularjs
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
                             <a href="http://reactivex.io/" target="_blank" style="color:#798d8f;">
                                 rxjs
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://www.w3.org/TR/service-workers/" target="_blank" style="color:#798d8f;">
+                                service workers
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="http://webcomponents.org/" target="_blank" style="color:#798d8f;">
+                                webcomponents
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://facebook.github.io/react/" target="_blank" style="color:#798d8f;">
+                                react
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="http://redux.js.org/docs/introduction/" target="_blank" style="color:#798d8f;">
+                                redux
                             </a>
                         </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
@@ -350,11 +420,6 @@
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
                             <a href="https://jquery.com/" target="_blank" style="color:#798d8f;">
                                 jquery
-                            </a>
-                        </div>
-                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
-                            <a href="http://webcomponents.org/" target="_blank" style="color:#798d8f;">
-                                webcomponents
                             </a>
                         </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
@@ -369,13 +434,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x no-print">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-cube fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Server Side</h4>
-                    <p class="text-muted">I use ASP.Net to create robust and lightning fast support for my front ends. ASP.Net in its proper C# form is very powerful! From Web API Restful services to signalR to sending simple mail from the backend, I enjoy it!</p>
+                    <p class="text-muted">I use ASP.Net to create robust and lightning fast support for my front ends. ASP.Net in its proper C#
+                        form is very powerful! From Web API Restful services to signalR to sending simple mail from the backend,
+                        I enjoy it! Although these days I am leaning more much more towards open source JavaScript based
+                        backends such as NodeJs.</p>
                     <hr />
                     <div class="row">
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
@@ -401,21 +469,6 @@
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
                             <a href="http://mongoosejs.com/" style="color:#798d8f;">
                                 mongoose
-                            </a>
-                        </div>
-                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
-                            <a href="https://www.npmjs.com/" style="color:#798d8f;">
-                                npm
-                            </a>
-                        </div>
-                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
-                            <a href="http://gulpjs.com/" style="color:#798d8f;">
-                                gulp
-                            </a>
-                        </div>
-                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
-                            <a href="http://yeoman.io/" style="color:#798d8f;">
-                                yeoman
                             </a>
                         </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
@@ -445,15 +498,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <span class="fa-stack fa-4x">
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x no-print">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-database fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Database</h4>
-                    <p class="text-muted">A wel normalized design is key in making your applications feel smooth and feature rich at the same time. Most of the database designing hours I have accumilated were spent using Microsoft SQL. Entity framework breathed life in to my code the same way that mongoosejs wil soon.</p>
+                    <p class="text-muted">A wel normalized design is key in making your applications feel smooth and feature rich at the same time.
+                        Most of the database designing hours I have accumilated were spent using Microsoft SQL. Entity framework
+                        breathed life in to my code the same way that mongoosejs wil soon.</p>
                     <hr />
-                    <div class="row">
+                    <div class="row ">
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://firebase.google.com/" style="color:#798d8f;">
+                                firebase
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://www.mongodb.org/" style="color:#798d8f;">
+                                mongodb
+                            </a>
+                        </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
                             <a href="http://www.microsoft.com/en-us/server-cloud/products/sql-server/" style="color:#798d8f;">
                                 ms sql 2012, 2014
@@ -464,14 +531,98 @@
                                 mysql
                             </a>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x no-print">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Tools</h4>
+                    <p class="text-muted">There are so many awesome tools out there that can only simplify your life as a developer. All these
+                        tools mentionals below are absolutely crutial. A good understanding of how each tool works enables
+                        me to setup the ground works for ease of mind development and rappid deployment.</p>
+                    <hr />
+                    <div class="row ">
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
-                            <a href="https://www.mongodb.org/" style="color:#798d8f;">
-                                mongodb
+                            <a href="https://www.docker.com/" style="color:#798d8f;">
+                                docker
                             </a>
                         </div>
                         <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
-                            <a href="https://firebase.google.com/" style="color:#798d8f;">
-                                firebase
+                            <a href="https://yarnpkg.com/en/" style="color:#798d8f;">
+                                yarn
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://www.npmjs.com/" style="color:#798d8f;">
+                                npm
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="http://gulpjs.com/" style="color:#798d8f;">
+                                gulp
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="http://yeoman.io/" style="color:#798d8f;">
+                                yeoman
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="http://jspm.io/" style="color:#798d8f;">
+                                jspm
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://webpack.github.io/" style="color:#798d8f;">
+                                webpack
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x no-print">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Other</h4>
+                    <p class="text-muted">Here are some other tools that I have used to make my life as a developer easier.</p>
+                    <hr />
+                    <div class="row">
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://code.visualstudio.com/" style="color:#798d8f;">
+                                visual studio code
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://atom.io/" style="color:#798d8f;">
+                                atom
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://www.atlassian.com/software/bamboo" style="color:#798d8f;">
+                                bamboo
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://www.chef.io/automate/" style="color:#798d8f;">
+                                chef
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://www.sourcetreeapp.com/" style="color:#798d8f;">
+                                sourcetree
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://zeplin.io/" style="color:#798d8f;">
+                                zeplin
+                            </a>
+                        </div>
+                        <div style="float:left;display:block; padding:5px 10px;border-radius:6px;border:solid 1px #798d8f;margin-top:4px;margin-left:5px;">
+                            <a href="https://robomongo.org/" style="color:#798d8f;">
+                                robomongo
                             </a>
                         </div>
                     </div>
@@ -496,7 +647,7 @@
                             <div class="col-md-12 col-sm-12">
                                 <img src="img/certificates/angular2_nodejs.png" />
                             </div>
-                            <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
+                            <div class="col-md-12 col-sm-12 section-subheading text-muted no-print" style="padding: 10px 20px 0 20px;">
                                 Angular 2 and NodeJS - The Practical Guide to MEAN Stack
                             </div>
                         </a>
@@ -506,7 +657,7 @@
                             <div class="col-md-12 col-sm-12">
                                 <img src="img/certificates/js_weird_parts.png" />
                             </div>
-                            <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
+                            <div class="col-md-12 col-sm-12 section-subheading text-muted no-print" style="padding: 10px 20px 0 20px;">
                                 JavaScript: Understanding the Weird Parts
                             </div>
                         </a>
@@ -516,7 +667,7 @@
                             <div class="col-md-12 col-sm-12">
                                 <img src="img/certificates/js_es6.png" />
                             </div>
-                            <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
+                            <div class="col-md-12 col-sm-12 section-subheading text-muted no-print" style="padding: 10px 20px 0 20px;">
                                 ES6 Javascript: The Complete Developer's Guide
                             </div>
                         </a>
@@ -526,7 +677,7 @@
                             <div class="col-md-12 col-sm-12">
                                 <img src="img/certificates/angular2_ground_up.png" />
                             </div>
-                            <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
+                            <div class="col-md-12 col-sm-12 section-subheading text-muted no-print" style="padding: 10px 20px 0 20px;">
                                 Angular 2 From The Ground Up
                             </div>
                         </a>
@@ -538,63 +689,64 @@
                             <div class="col-md-12 col-sm-12">
                                 <img src="img/certificates/firebase.png" />
                             </div>
-                            <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
+                            <div class="col-md-12 col-sm-12 section-subheading text-muted no-print" style="padding: 10px 20px 0 20px;">
                                 Learning Firebase
                             </div>
                         </a>
                     </div>
                     <div class="col-md-3 col-sm-12">
-                        <div class="col-md-12 col-sm-12">
-                            <img src="img/certificates/unity.png" />
-                        </div>
-                        <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
-                            Learn to Code by Making Games - The Complete Unity Developer
-                        </div>
+                        <a href="img/certificates/angular2_theory_prac_crt.png" target="_blank">
+                            <div class="col-md-12 col-sm-12">
+                                <img src="img/certificates/angular2_theory_prac.png" />
+                            </div>
+                            <div class="col-md-12 col-sm-12 section-subheading text-muted no-print" style="padding: 10px 20px 0 20px;">
+                                Angular 2: From Theory to Practice
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <a href="img/certificates/angular2_typescript_crt.png" target="_blank">
+                            <div class="col-md-12 col-sm-12">
+                                <img src="img/certificates/angular2_typescript.png" />
+                            </div>
+                            <div class="col-md-12 col-sm-12 section-subheading text-muted no-print" style="padding: 10px 20px 0 20px;">
+                                Angular 2 & TypeScript Beginner Web Development
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-12">
                         <div class="col-md-12 col-sm-12">
-                            <img src="img/certificates/angular2_theory_prac.png" />
+                            <img src="img/certificates/react.png" />
                         </div>
-                        <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
-                            Angular 2: From Theory to Practice
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="col-md-12 col-sm-12">
-                            <img src="img/certificates/complete_nodejs.png" />
-                        </div>
-                        <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
-                            The Complete Node.js Developer Course
+                        <div class="col-md-12 col-sm-12 section-subheading text-muted no-print" style="padding: 10px 20px 0 20px;">
+                            Modern React with Redux
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12 col-sm-12" style="margin-bottom: 50px;">
                     <div class="col-md-3 col-sm-12">
                         <div class="col-md-12 col-sm-12">
-                            <img src="img/certificates/angular2_typescript.png" />
+                            <img src="img/certificates/complete_nodejs.png" />
                         </div>
-                        <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
-                            Angular 2 & TypeScript Beginner Web Development
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12">
-                        <div class="col-md-12 col-sm-12">
-                            <img src="img/certificates/react.png" />
-                        </div>
-                        <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
-                            Modern React with Redux
+                        <div class="col-md-12 col-sm-12 section-subheading text-muted no-print" style="padding: 10px 20px 0 20px;">
+                            The Complete Node.js Developer Course
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-12">
-                        <div class="col-md-12 col-sm-12">
-                            <img src="img/certificates/angular2_complete.png" />
-                        </div>
-                        <div class="col-md-12 col-sm-12 section-subheading text-muted" style="padding: 10px 20px 0 20px;">
-                            Angular 2 - The Complete Guide
-                        </div>
+                        <a href="img/certificates/angular2_complete_crt.png" target="_blank">
+                            <div class="col-md-12 col-sm-12">
+                                <img src="img/certificates/angular2_complete.png" />
+                            </div>
+                            <div class="col-md-12 col-sm-12 section-subheading text-muted no-print" style="padding: 10px 20px 0 20px;">
+                                Angular 2 - The Complete Guide
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-3 col-sm-12">
-                        
+
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+
                     </div>
                 </div>
             </div>
@@ -602,12 +754,13 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="no-print">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Me</h2>
-                    <h3 class="section-subheading text-muted">If you would like to know more about me or if you think my website is awesome,<br /> you can contact me using the form below.</h3>
+                    <h3 class="section-subheading text-muted">If you would like to know more about me or if you think my website is awesome,<br /> you can contact
+                        me using the form below.</h3>
                 </div>
             </div>
             <div class="row">
@@ -643,7 +796,7 @@
     </section>
 
     <footer>
-        <div class="container">
+        <div class="container no-print">
             <div class="row">
                 <div class="col-md-4">
                     <span class="copyright">Copyright &copy; swyser.co.za 2015</span>
@@ -665,6 +818,17 @@
         </div>
     </footer>
 
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(function (reg) {
+                    reg.update();
+                }).catch(function (e) {
+                    console.log('Error during service worker registration', e);
+                });
+        }
+    </script>
+
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
 
@@ -684,4 +848,5 @@
     <script src="js/agency.js"></script>
 
 </body>
+
 </html>
