@@ -1,14 +1,18 @@
-var gulp = require('gulp');
-var cssmin = require('gulp-cssmin');
-var imagemin = require('gulp-imagemin');
-var uglify = require('gulp-uglify');
-var clean = require('gulp-clean');
-var htmlmin = require('gulp-htmlmin');
-var webserver = require('gulp-webserver');
-var FwdRef = require('undertaker-forward-reference');
+const gulp = require('gulp');
+const cssmin = require('gulp-cssmin');
+const imagemin = require('gulp-imagemin');
+const uglify = require('gulp-uglify');
+const clean = require('gulp-clean');
+const htmlmin = require('gulp-htmlmin');
+const webserver = require('gulp-webserver');
+const zip = require('gulp-zip');
+const FwdRef = require('undertaker-forward-reference');
 gulp.registry(FwdRef());
 
 gulp.task('clean', () => {
+  gulp.src('dist.zip')
+    .pipe(clean());
+
   return gulp.src('dist/')
     .pipe(clean());
 });
@@ -56,7 +60,7 @@ gulp.task('root', () => {
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('serve',  () => {
+gulp.task('serve', () => {
   gulp.src('dist/')
     .pipe(webserver({
       fallback: 'index.html',
@@ -69,6 +73,12 @@ gulp.task('serve',  () => {
     }));
 });
 
+gulp.task('create_artifact', () => {
+  return gulp.src('dist/**/*.*')
+    .pipe(zip('dist.zip'))
+    .pipe(gulp.dest('.'))
+});
+
 gulp.task('generate-service-worker', (callback) => {
   var path = require('path');
   var swPrecache = require('sw-precache');
@@ -78,6 +88,15 @@ gulp.task('generate-service-worker', (callback) => {
     stripPrefix: 'dist/'
   }, callback);
 });
+
+gulp.task('deploy',
+  gulp.series(
+    'clean',
+    gulp.parallel('minify-css', 'fontAwesome', 'fonts', 'images', 'js', 'less', 'html', 'root'),
+    'generate-service-worker',
+    'create_artifact'
+  )
+);
 
 gulp.task('default',
   gulp.series(
